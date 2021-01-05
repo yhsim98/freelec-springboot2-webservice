@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-com.jojoldu.book.springboot.web')
+    compile('org.springframework.boot:spring-boot-starter-com.jojoldu.book.springboot.com.jojoldu.book.springboot.web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
