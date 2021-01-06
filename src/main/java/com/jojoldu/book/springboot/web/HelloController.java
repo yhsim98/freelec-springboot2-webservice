@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     /*
-    HTTP Method인 Get의 요청을 받을 수 있는 API를 만들어 준다
-    imput : /hello
+    HTTP Method 인 Get 의 요청을 받을 수 있는 API 를 만들어 준다
+    input : /hello
     output : "hello"
      */
     @GetMapping("/hello")
