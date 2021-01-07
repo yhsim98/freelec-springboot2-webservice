@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.web.domain.posts;
+package com.jojoldu.book.springboot.domain.posts;
 
 // Posts 클래스로 Database를 접근하게 해줄 JpaRepository
 

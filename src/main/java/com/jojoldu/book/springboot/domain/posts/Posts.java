@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.web.domain.posts;
+package com.jojoldu.book.springboot.domain.posts;
 // Spring Data Jpa 적용
 
 import lombok.Builder;

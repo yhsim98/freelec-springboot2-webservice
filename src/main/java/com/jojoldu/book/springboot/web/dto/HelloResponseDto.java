@@ -15,6 +15,7 @@ final이 없는 필드는 생성자에 포함되지 않습니다
  */
 @Getter
 @RequiredArgsConstructor
+//이건 되는데 저거는 안되네 슈벌
 public class HelloResponseDto {
 
     private final String name;
