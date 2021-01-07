@@ -1,5 +1,9 @@
 package com.jojoldu.book.springboot.web.dto;
-
+/*
+2020.01.05 - lombok 추가
+lombok이란 자바 라이브러리로써 자바 개발할 때 사용하는 코드 Getter, Setter, 기본생성자, toString 등을
+어노테이션으로 자동 생성해 준다
+ */
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
