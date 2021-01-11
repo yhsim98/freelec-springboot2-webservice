@@ -29,7 +29,9 @@ import javax.persistence.Id;
 public class Posts {
 
     @Id // 해당 테이블의 PK(Primary Key) 필드를 나타낸다
-    @GeneratedValue(strategy = GenerationType.IDENTITY)// PK의 생성 규칙을 나타낸다, 스프링 부트 2.0 에서는 GenerationType.IDENTITY 추가해야만 auto_increment가 된다
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // PK의 생성 규칙을 나타낸다, 스프링 부트 2.0 에서는 GenerationType.IDENTITY 추가해야만 auto_increment가 된다
+
     private Long id;
 
     // 테이블의 칼럼을 나타내며 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 컬럼이 된다
@@ -51,5 +53,11 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+
+    public void update(String title, String content){
+        this.content = content;
+        this.title = title;
     }
 }
