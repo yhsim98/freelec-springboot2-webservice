@@ -1,6 +1,7 @@
 package com.jojoldu.book.springboot.domain.posts;
 // Spring Data Jpa 적용
 
+import com.jojoldu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +27,7 @@ import javax.persistence.Id;
 @Getter// lombok 어노테이션 클래스 내 모든 필드의 Getter 메소드를 자동생성
 @NoArgsConstructor// 기본 생성자 자동 추가, public Posts(){}와 같은 효과
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 해당 테이블의 PK(Primary Key) 필드를 나타낸다
     @GeneratedValue(strategy = GenerationType.IDENTITY)

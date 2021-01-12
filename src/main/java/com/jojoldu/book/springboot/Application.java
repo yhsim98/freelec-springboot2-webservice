@@ -2,6 +2,8 @@ package com.jojoldu.book.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
 /*
 메인 클래스
 스프링 부트의 자동 설정, 스프링 Bean 읽기와 생성을 모두 자동으로 설정
@@ -18,6 +20,7 @@ SpringApplication.run을 통해 내장 WAS를 실행한다
 만약 새로운 서버가 추가되면 모든 서버가 같은 WAS환경을 구축해야만 한다
 내장 WAS를 사용한다면 이런 문제를 피할 수 있다
  */
+@EnableJpaAuditing // JPA Auditing 활성화
 @SpringBootApplication
 public class Application {
     public static void main(String[] args){
