@@ -1,5 +1,7 @@
 package com.jojoldu.book.springboot.config.auth;
 
+import com.jojoldu.book.springboot.config.auth.dto.OAuthAttributes;
+import com.jojoldu.book.springboot.config.auth.dto.SessionUser;
 import com.jojoldu.book.springboot.domain.user.User;
 import com.jojoldu.book.springboot.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -42,8 +44,8 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         // User 클래스를 사용하지 않고 새로 만들어서 쓰는 이유가 있다....
 
         return new DefaultOAuth2User(
-                Collections.singleton(new SimpleGrantedAuthority(uesr.getRoleKey())),
-                attributes.getAttribute(),
+                Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),
+                attributes.getAttributes(),
                 attributes.getNameAttributeKey());
 
     }
