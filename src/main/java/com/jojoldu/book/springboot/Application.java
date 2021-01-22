@@ -20,7 +20,7 @@ SpringApplication.run을 통해 내장 WAS를 실행한다
 만약 새로운 서버가 추가되면 모든 서버가 같은 WAS환경을 구축해야만 한다
 내장 WAS를 사용한다면 이런 문제를 피할 수 있다
  */
-@EnableJpaAuditing // JPA Auditing 활성화
+//@EnableJpaAuditing // JPA Auditing 활성화
 @SpringBootApplication
 public class Application {
     public static void main(String[] args){
