@@ -16,4 +16,4 @@
     * AWS를 사용한 배포
     * 자동 및 무중단 배포
 ## reference 
-  [스프링 부트와 AWS로 혼자 구현하는 웹 서비스]('https://jojoldu.tistory.com/463')
+  [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://jojoldu.tistory.com/463)
